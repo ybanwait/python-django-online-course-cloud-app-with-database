@@ -59,12 +59,12 @@
                     <div class="form-check">
                         {% if choice.is_choice_correct and choice in choices %}
                         <div class="text-success">Correct answer: {{ choice.choice }}</div>
-                        {% else %}{% if choice.is_choice_correct and choice not in choices %}
+                        {% else %}{% if choice.is_choice_correct and not choice in choices %}
                         <div class="text-warning">Not selected: {{ choice.choice }}</div>
-                        {% else %}{% if not choice.is_choice_correct and choice not in choices %}
+                        {% else %}{% if not choice.is_choice_correct and choice in choices %}
                         <div class="text-danger">Wrong answer: {{ choice.choice }}</div>
                         {% else %}
-                        <div>{{choice.content}}</div>
+                        <div>{{choice.choice}}</div>
                         {% endif %}{% endif %}{% endif %}
                     </div>    
                     {% endfor %}
