@@ -1,7 +1,7 @@
 
 **General Notes**
 
-An `onlinecourse` app has already been provided in this repo upon which you will be adding a new assesement feature.
+An `onlinecourse` app has already been provided in this repo upon which you will be adding a new assessment feature.
 
 - If you want to develop the final project on Theia hosted by [IBM Developer Skills Network](https://labs.cognitiveclass.ai/), you will need to create the same project structure on Theia workspace and save it everytime you close the browser
 - Or you could develop the final project locally by setting up your own Python runtime and IDE
