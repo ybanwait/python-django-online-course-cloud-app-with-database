@@ -57,17 +57,17 @@
                     <form id="questionform" class="form-inline" action="{% url 'onlinecourse:submit' course.id %}" method="post">
                         
                         {% for question in course.question_set.all %}
-                            <div class="card mt-1">
+                            <div class="card mt-1 w-100">
                                 <div class="card-header">
                                     <h2>{{question.content}}</h2>
                                 </div>
                                 {% csrf_token %}
                                 <div class="form-group">
                                     {% for choice in question.choice_set.all %}
-                                        <div class="form-check">
+                                        <div class="form-check w-100 justify-content-start">
                                             <label class="form-check-label">
                                                 <input type="checkbox" name="choice_{{choice.id}}" id="choice_{{choice.id}}" 
-                                                value="choice_{{choice.id}}" class="form-check-input">{{choice.choice}}
+                                                value="{{choice.id}}" class="form-check-input">{{choice.choice}}
                                             </label>
                                         </div>
                                     {% endfor %}               
