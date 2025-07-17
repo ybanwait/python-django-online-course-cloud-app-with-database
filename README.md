@@ -1,6 +1,6 @@
 
 **General Notes**
-This online course app is developed as a part of the final project by IBM Developer Skills Nerwork. This app contains code to add/manage Users, Courses, Intructors, Lessons, Exams with grades. An admin interface is added to manage all this content.
+This online course app is developed as a part of the final project by IBM Developer Skills Nerwork. This app contains code to add/manage Users, Courses, Instructors, Lessons, Exams with grades. An admin interface is added to manage all this content.
 
 
 **ER Diagram**
